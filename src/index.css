@@ -1,0 +1,40 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/cascadia-code/2009.22/cascadia-code.min.css');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Cascadia Code', monospace;
+  background: linear-gradient(to right, #3a6186, #89253e);
+  color: aliceblue;
+}
+
+img {
+  width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+@layer components {
+
+}
+
+@layer utilities {
+  .transition-li {
+    @apply transition-all duration-200 ease-in-out
+  }
+
+  .transform-li{
+    @apply text-secondary transfrom scale-110
+  }
+
+  .active{
+    @apply text-secondary;
+  }
+}
