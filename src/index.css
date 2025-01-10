@@ -5,36 +5,32 @@
 @tailwind utilities;
 
 body {
-  font-family: 'Cascadia Code', monospace;
-  background: linear-gradient(to right, #3a6186, #89253e);
-  color: aliceblue;
+	font-family: 'Cascadia Code', monospace;
+	background: linear-gradient(to right, #283048, #859398);
+	color: aliceblue;
 }
 
 img {
-  width: 100%;
+	width: 100%;
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-}
-
-@layer components {
-
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
 }
 
 @layer utilities {
-  .transition-li {
-    @apply transition-all duration-200 ease-in-out
-  }
+	.transition-li {
+		@apply transition-all duration-200 ease-in-out;
+	}
 
-  .transform-li{
-    @apply text-secondary transfrom scale-110
-  }
+	.transform-li {
+		@apply text-secondary transform scale-110;
+	}
 
-  .active{
-    @apply text-secondary;
-  }
+	.active {
+		@apply text-secondary;
+	}
 }

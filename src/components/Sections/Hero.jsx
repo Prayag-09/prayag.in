@@ -1,8 +1,9 @@
+import NavBar  from '../Navbar/Navbar';
 const Hero = () => {
-    return  (
-        <div>
-            Hero
-        </div>
-    )
-}
+	return (
+		<div>
+			<NavBar />
+		</div>
+	);
+};
 export default Hero;
