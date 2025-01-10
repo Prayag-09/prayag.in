@@ -1,15 +1,16 @@
-import Hero from '../components/Sections/Hero'
+// import Hero from '../components/Sections/Hero'
+import Footer from '../components/Sections/Footer'
 
 const Main = () => {
   return (
     <main>
-        <Hero />
+        {/* <Hero /> */}
         {/* <About />
         <Project />
         <Blog />
         <Contact />
-        <Footer />
         <Analytics /> */}
+        <Footer />
     </main>
   )
 }
