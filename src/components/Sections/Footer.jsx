@@ -1,19 +1,12 @@
 const Footer = () => {
 	return (
-		<footer className='bg-primary py-6'>
-			<div className='max-w-4xl mx-auto px-6 md:px-8 text-center'>
-				<div className='flex flex-col items-center gap-2 md:flex-row md:justify-between'>
-					{/* <NowPlaying /> */}
-					<p>Spotify Music Here</p>
-					<p className='text-secondary font-medium'>
-						© 2025 Tushar Prayag | All Rights Reserved
-					</p>
-				</div>
-				<p className='text-secondary font-light text-sm mt-2'>
-					Made with ❤️ in India
+		<section className='max-w-4xl mx-auto md:px-8 pb-3'>
+			<div className='flex flex-col justify-center items-center gap-3 md:flex-row md:justify-between md:items-center'>
+				<p className='text-secondary-text text-center'>
+					© 2025 T Prayag. All Rights Reserved.
 				</p>
 			</div>
-		</footer>
+		</section>
 	);
 };
 

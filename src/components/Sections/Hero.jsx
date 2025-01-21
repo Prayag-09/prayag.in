@@ -1,115 +1,102 @@
-import { CustomButton } from '../buttons/CustomButton';
-import Navbar from '../navbar/Navbar';
-import profile from '../../assets/images/profile.webp';
+import CustomButton from '../Buttons/CustomButton.jsx';
+import NavBar from '../navbar/NavBar';
+import profile from '../../assets/images/profile.jpg';
 import { useRef } from 'react';
 import hover3d from '../../utils/hover';
 import { motion } from 'framer-motion';
-import { headlines } from '../../utils';
-import { SocialMediaIcons } from '../ui/SocialMediaIcons';
-import AnimatedSubtitle from '../text anim/AnimatedSubtitle';
-import AnimatedTitle from '../text anim/AnimatedTitle';
+import { headlines } from '../../utils/static.js';
+import { SocialMediaIcons } from '../ui/SocialMediaIcons.jsx';
+import AnimatedSubtitle from '../Animation/AnimatedSubtitle';
+import AnimatedTitle from '../Animation/AnimatedTitle';
 import { animateScroll } from 'react-scroll';
 
 const Hero = () => {
-	// Use the 'useRef' hook to reference the hero section
 	const hero = useRef(null);
 
-	// Applying hover effect for the hero section
 	const hoverHero = hover3d(hero, {
-		x: 30, // Movement on the x-axis (horizontal)
-		y: -40, // Movement on the y-axis (vertical)
-		z: 30, // 3D depth movement
+		x: 30,
+		y: -40,
+		z: 30,
 	});
 
-	// Applying hover effect for the image (profile)
 	const imageHover = hover3d(hero, {
-		x: 20, // Movement on the x-axis (horizontal)
-		y: -5, // Movement on the y-axis (vertical)
-		z: 11, // 3D depth movement
+		x: 20,
+		y: -5,
+		z: 11,
 	});
 
-	// Function to scroll to the bottom of the page (Contact section)
 	const scrollToContact = () => {
-		animateScroll.scrollToBottom(); // Smooth scroll to bottom
+		animateScroll.scrollToBottom();
 	};
 
 	return (
 		<div className='bg-primary bg-grid-small-white/[0.2]' id='home'>
-			{/* Navbar Component */}
-			<Navbar />
+			<NavBar />
 
-			{/* Hero Section */}
 			<section ref={hero}>
 				<div className='relative z-10 max-w-screen-xl mx-auto px-4 py-28 md:px-8'>
-					{/* Social Media Icons */}
+					{/* Social Icon */}
 					<SocialMediaIcons />
 
-					{/* Info Section (Text and Profile Image) */}
+					{/* Info Div */}
 					<div className='space-y-2 max-w-4xl mx-auto'>
-						{/* Title and Subtitle */}
 						<div className='flex justify-between'>
 							<div>
-								{/* Animated Title */}
 								<AnimatedTitle
-									text={headlines[0]} // First headline from 'headlines' array
+									text={headlines[0]}
 									className='text-4xl font-extrabold mx-auto md:text-5xl text-primary-text'
-									color={true} // Boolean to change color if true
+									color={true}
 								/>
 
-								{/* Animated Subtitle */}
 								<AnimatedSubtitle
-									text={headlines[1]} // Second headline from 'headlines' array
+									text={headlines[1]}
 									className='text-secondary-text text-2xl md:text-3xl mx-auto font-bold break-words'
 								/>
 							</div>
 
-							{/* Profile Image */}
 							<motion.div
 								initial={{
-									opacity: 0, // Initially invisible
-									scale: 0, // Initially scaled down to 0
+									opacity: 0,
+									scale: 0,
 								}}
 								animate={{
-									opacity: 1, // Animate to visible
-									scale: 1, // Animate to normal size
+									opacity: 1,
+									scale: 1,
 									transition: {
-										duration: 1, // Animation duration
+										duration: 1,
 									},
 								}}
-								className='hidden md:block' // Hide on small screens
+								className='hidden md:block'
 								style={{
-									transform: hoverHero.transform, // Apply 3D hover effect
+									transform: hoverHero.transform,
 								}}>
-								{/* Profile Image */}
 								<img
-									src={profile} // Profile image source
+									src={profile}
 									alt='Profile'
-									className='rounded-full border-2 border-secondary' // Rounded and styled border
+									className='w-20 h-30 rounded-full border-2 border-secondary'
 									style={{
-										transform: imageHover.transform, // Apply hover effect for image
+										transform: imageHover.transform,
 									}}
 								/>
 							</motion.div>
 						</div>
 
-						{/* Description */}
 						<motion.p
-							initial={{ opacity: 0, y: 20 }} // Initially invisible and slightly down
+							initial={{ opacity: 0, y: 20 }}
 							animate={{
-								opacity: 1, // Animate to visible
-								y: 0, // Animate back to normal vertical position
+								opacity: 1,
+								y: 0,
 								transition: {
-									delay: 0.6, // Delay before the animation starts
+									delay: 0.6,
 								},
 							}}
 							className='text-secondary-text text-xl pb-4'>
-							{headlines[2]} {/* Display third headline from 'headlines' */}
+							{headlines[2]}
 						</motion.p>
 
-						{/* Custom Button (Get in Touch) */}
 						<CustomButton
-							label={'Get in Touch'} // Label for the button
-							onClick={scrollToContact} // Action to scroll to contact section
+							label={'Get in Touch'}
+							onClick={scrollToContact}
 							svg={
 								<svg
 									xmlns='http://www.w3.org/2000/svg'
@@ -127,12 +114,12 @@ const Hero = () => {
 					</div>
 				</div>
 
-				{/* Background Decoration */}
+				{/* Background */}
 				<div
 					className='absolute inset-0 ml-36 mt-44 max-w-xs h-[357px] blur-[118px] sm:max-w-md md:max-w-lg'
 					style={{
 						background:
-							'linear-gradient(106.89deg, rgba(192, 132, 252, 0.11) 15.73%, rgba(14, 165, 233, 0.41) 15.74%, rgba(232, 121, 249, 0.26) 56.49%, rgba(79, 70, 229, 0.4) 115.91%)', // Background gradient style
+							'linear-gradient(106.89deg, rgba(192, 132, 252, 0.11) 15.73%, rgba(14, 165, 233, 0.41) 15.74%, rgba(232, 121, 249, 0.26) 56.49%, rgba(79, 70, 229, 0.4) 115.91%)',
 					}}></div>
 			</section>
 		</div>

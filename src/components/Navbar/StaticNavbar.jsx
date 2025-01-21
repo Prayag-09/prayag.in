@@ -23,8 +23,8 @@ const StaticNavbar = () => {
 	const NameLogo = () => (
 		<div className='flex items-center justify-between py-5 md:block'>
 			<Link to='home' smooth={true} duration={500} className='flex gap-1 group'>
-				<span className='font-bold text-[1.3rem] text-white group-hover:text-secondary group-hover:scale-110 transition-colors duration-500'>
-					Prayag
+				<span className='font-bold text-[1.1rem] text-white group-hover:text-secondary group-hover:scale-110 transition-colors duration-500'>
+					prayag
 				</span>
 			</Link>
 
@@ -84,8 +84,7 @@ const StaticNavbar = () => {
 							{fixedNav.map((navItem, idx) => (
 								<li
 									key={idx}
-									className='text-white transition-li hover:transform-li text-base font-semibold group-hover:scale-110 group-hover:text-secondary transition-transform duration-500'
-								>
+									className='text-white transition-li hover:transform-li text-base font-semibold group-hover:scale-110 group-hover:text-secondary transition-transform duration-500'>
 									<Link
 										to={navItem.name.toLowerCase()}
 										smooth={true}
