@@ -14,31 +14,29 @@ export const fixedNav = [
 
 export const projects = [
 	{
-		title: 'SecureWallet',
-		github: 'https://github.com/your-repo/securewallet', // Replace with your GitHub link
-		hosted: 'https://securewallet.example.com', // Replace with the hosted link if available
-		desc: 'A digital wallet application with secure password management, real-time transactions, and improved SEO using Next.js.',
-		techStack: ['Next.js', 'Node.js', 'Express', 'MongoDB', 'Tailwind CSS'],
+		title: '2024 AWWARDS WebApp - Zentry',
+		image: '',
+		linkGithub: 'https://github.com/Prayag-09/Zentry-Awards',
+		linkOnline: null,
+		description: '2024 Best Web App Clone using React, TailwindCSS and GSAP.',
+		techStack: ['React', 'Tailwind CSS', 'GSAP'],
 	},
 	{
 		title: 'JobifyX',
-		github: 'https://github.com/your-repo/jobifyx', // Replace with your GitHub link
-		hosted: 'https://jobifyx.example.com', // Replace with the hosted link if available
-		desc: 'A job portal designed to connect job seekers and recruiters, featuring advanced search, user authentication, and dynamic content management.',
-		techStack: ['React', 'Node.js', 'Express', 'MongoDB', 'Tailwind CSS'],
-	},
-	{
-		title: 'Full Stack Tuition App',
-		github: 'https://github.com/your-repo/tuition-app', // Replace with your GitHub link
-		hosted: 'https://tuitionapp.example.com', // Replace with the hosted link if available
-		desc: 'A scalable platform for managing tuition classes, including features like role-based authentication, schedules, and payment management.',
-		techStack: ['React', 'Node.js', 'Express', 'MongoDB', 'Redis'],
+		image: 'jobifyx',
+		linkGithub: 'https://github.com/Prayag-09/JobifyX-Ultimate-Job-Portal',
+		linkOnline: null,
+		description:
+			'A job portal designed to connect job seekers and recruiters, featuring advanced search, user authentication, and dynamic content management.',
+		techStack: ['React', 'Node.js', 'Supabase', 'Tailwind CSS'],
 	},
 	{
 		title: 'ForgeStory',
-		github: 'https://github.com/your-repo/forgestory', // Replace with your GitHub link
-		hosted: 'https://forgestory.example.com', // Replace with the hosted link if available
-		desc: 'A storytelling platform powered by modern web technologies to enhance user engagement with rich content.',
+		image: 'forgestory',
+		linkGithub: 'https://github.com/your-repo/forgestory',
+		linkOnline: 'https://forgestory.example.com',
+		description:
+			'A storytelling platform powered by modern web technologies to enhance user engagement with rich content.',
 		techStack: ['React', 'Tailwind CSS', 'Cloudflare', 'HonoJS'],
 	},
 ];
