@@ -60,7 +60,7 @@ const FloatingNavBar = ({ className = '', visible }) => {
 						onClick={() => scrollToTop(navItem)}
 						key={idx}
 						aria-label={`Navigate to ${navItem.name}`}
-						className={`relative items-center flex space-x-1 text-neutral-600 transition-li hover:transform-li cursor-pointer`}>
+						className={`relative items-center font-bold flex space-x-1 text-neutral-600 transition-li hover:transform-li cursor-pointer`}>
 						<span className='block sm:hidden'>{navItem.icon}</span>
 						<span className='hidden sm:block text-sm md:text-base'>
 							{navItem.name}

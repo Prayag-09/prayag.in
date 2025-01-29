@@ -35,10 +35,8 @@ const Hero = () => {
 
 			<section ref={hero}>
 				<div className='relative z-10 max-w-screen-xl mx-auto px-4 py-28 md:px-8'>
-					{/* Social Icon */}
 					<SocialMediaIcons />
 
-					{/* Info Div */}
 					<div className='space-y-2 max-w-4xl mx-auto'>
 						<div className='flex justify-between'>
 							<div>
@@ -66,14 +64,14 @@ const Hero = () => {
 										duration: 1,
 									},
 								}}
-								className='hidden md:block'
+								className='hidden pl-10 md:block'
 								style={{
 									transform: hoverHero.transform,
 								}}>
 								<img
 									src={profile}
 									alt='Profile'
-									className='w-20 h-30 rounded-full border-2 border-secondary'
+									className='w-30  h-30 rounded-full border-2 border-secondary'
 									style={{
 										transform: imageHover.transform,
 									}}
