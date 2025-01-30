@@ -1,9 +1,9 @@
-import Hero from '../components/sections/Hero.jsx';
-import About from '../components/sections/About.jsx';
-import Projects from '../components/sections/Projects.jsx';
-import Contact from '../components/sections/Contact.jsx';
-import Blog from '../components/sections/Blog.jsx';
-import Footer from '../components/sections/Footer.jsx';
+import Hero from '../components/Sections/Hero.jsx';
+import About from '../components/Sections/About.jsx';
+import Projects from '../components/Sections/Projects.jsx';
+import Contact from '../components/Sections/Contact.jsx';
+import Blog from '../components/Sections/Blog.jsx';
+import Footer from '../components/Sections/Footer.jsx';
 const Main = () => {
 	return (
 		<div>
