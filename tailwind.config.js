@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 const svgToDataUri = require('mini-svg-data-uri');
 
 /** @type {import('tailwindcss').Config} */
