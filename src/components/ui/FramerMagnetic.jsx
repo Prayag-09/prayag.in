@@ -14,7 +14,7 @@ const FramerMagnetic = ({ children }) => {
 		setPosition({ x: middleX, y: middleY });
 	};
 
-	const handleMouseLeave = (e) => {
+	const handleMouseLeave = () => {
 		setPosition({ x: 0, y: 0 });
 	};
 
