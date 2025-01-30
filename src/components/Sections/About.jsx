@@ -7,7 +7,7 @@ import { useInView } from 'react-intersection-observer';
 import { motion, useAnimation } from 'framer-motion';
 import { useEffect } from 'react';
 import Tooltip from '../ui/Tooltip.jsx';
-import transition from '../../assets/images/transition.png';
+import transition from '/assets/images/transition.png';
 
 const About = () => {
 	const control = useAnimation();
@@ -43,9 +43,9 @@ const About = () => {
 					animate={control}
 					className='flex-1 text-base'>
 					<p className='pb-3'>
-						Hey there! I'm Prayag, a software developer based in India. I
+						Hey there! I&apos;m Prayag, a software developer based in India. I
 						specialize in backend development, particularly using Express.JS,
-						Node.JS, and , but I'm also comfortable with various tools and adapt
+						Node.JS, and , but I&apos;m also comfortable with various tools and adapt
 						to project needs. I also have experience in frontend development.
 					</p>
 
@@ -59,16 +59,16 @@ const About = () => {
 					</div>
 
 					<div className='pb-3'>
-						Outside of the world of code, I'm the guy who enjoys playing
+						Outside of the world of code, I&apos;m the guy who enjoys playing
 						Basketball, Football and Chess. Each Sunday morning, you can find me
 						atexpressing gratitude to God.
 					</div>
 
 					<div className='pb-3'>
-						I'm looking for new opportunities where I can merge my love for code
-						with my love for learning to solve challenging problems. If you have
-						an opening that might be a good fit, let's connect and explore the
-						possibilities!
+							I&apos;m looking for new opportunities where I can merge my love for
+							code with my love for learning to solve challenging problems. If
+							you have an opening that might be a good fit, let&apos;s connect and
+							explore the possibilities!
 					</div>
 				</motion.div>
 

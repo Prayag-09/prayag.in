@@ -17,7 +17,7 @@ const Blog = () => {
 
 			<div className='p-6 pt-0 text-center mt-10'>
 				<a
-					href='https://medium.com/@jclaytonblanc'
+					href='https://t-prayag.hashnode.dev/'
 					className='align-middle text-center font-medium lowercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-base py-3 px-6 rounded-lg hover:bg-[#6b90bd] text-white shadow-md shadow-gray-900/10 hover:shadow-lg bg-secondary focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none'
 					type='button'>
 					see more

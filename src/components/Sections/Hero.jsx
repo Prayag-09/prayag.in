@@ -1,6 +1,6 @@
 import CustomButton from '../Buttons/CustomButton.jsx';
 import NavBar from '../navbar/NavBar';
-import profile from '../../assets/images/profile.jpg';
+import profile from '/assets/images/profile.jpg';
 import { useRef } from 'react';
 import hover3d from '../../utils/hover';
 import { motion } from 'framer-motion';

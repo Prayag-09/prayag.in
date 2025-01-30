@@ -22,12 +22,12 @@ const ArticleCard = ({ article }) => {
 				opacity: opacityProgress,
 			}}
 			className='relative flex flex-col mt-2 text-primary-text bg-third shadow-md bg-clip-border rounded-xl sm-80 md:w-[21rem] lg:w-[25rem] mb-3'>
-			<div className='relative h-56 mx-4 -mt-6 overflow-hidden shadow-lg bg-clip-border rounded-xl shadow-blue-gray-500/40'>
+			<div className='relative h-56 mx-4 pt-5 overflow-hidden shadow-lg bg-clip-border rounded-xl shadow-blue-gray-500/40'>
 				<DirectionAwareHover imageUrl={article.image} />
 			</div>
 			<div className='p-6'>
 				<h5 className='block mb-2 text-xl font-semibold'>{article.title}</h5>
-				<p className='block text-base text-secondary-text'>{article.resume}</p>
+				<p className='block text-base text-secondary-text'>{article.desc}</p>
 			</div>
 			<div className='p-6 pt-0'>
 				<a

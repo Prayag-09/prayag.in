@@ -175,13 +175,13 @@ const contactData = [
 		title: 'Email',
 		icon: <MdEmail size={24} />,
 		info: 'prayagtushar2016@gmail.com',
-		path: 'mailto:jclaytonblanc@gmail.com',
+		path: 'mailto:prayagtushar2016@gmail.com',
 	},
 	{
 		title: 'LinkedIn',
 		icon: <FaLinkedin size={24} />,
-		info: '@johnclaytonblanc',
-		path: '',
+		info: '@prayag-tushar',
+		path: 'https://www.linkedin.com/in/prayagtushar/',
 	},
 	{
 		title: 'Hashnode Blogs',
