@@ -60,8 +60,7 @@ const About = () => {
 
 					<div className='pb-3'>
 						Outside of the world of code, I&apos;m the guy who enjoys playing
-						Basketball, Football and Chess. Each Sunday morning, you can find me
-						atexpressing gratitude to God.
+						Basketball, Football and Chess.
 					</div>
 
 					<div className='pb-3'>
