@@ -1,5 +1,5 @@
 export const headlines = [
-	"Hi, I'm Prayag.",
+	"Hi, I'm T Prayag.",
 	"I'm a Software Developer.",
 	'I specialize in building scalable, user-friendly full-stack web applications.',
 ];
