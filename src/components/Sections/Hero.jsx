@@ -64,14 +64,14 @@ const Hero = () => {
 										duration: 1,
 									},
 								}}
-								className='hidden pl-10 md:block'
+								className='hidden pl-10 pb-1 md:block'
 								style={{
 									transform: hoverHero.transform,
 								}}>
 								<img
 									src={profile}
 									alt='Profile'
-									className='w-30  h-30 rounded-full border-2 border-secondary'
+									className='w-[200px] h-[200px] rounded-full border-2 border-secondary'
 									style={{
 										transform: imageHover.transform,
 									}}
