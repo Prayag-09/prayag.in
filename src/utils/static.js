@@ -1,7 +1,7 @@
 export const headlines = [
 	"Hi, I'm T Prayag.",
 	"I'm a Software Developer.",
-	'I specialize in building scalable, user-friendly full-stack web applications.',
+	'I build scalable, high-performance full-stack web applications with a focus on efficiency and user experience.',
 ];
 
 export const fixedNav = [
@@ -16,28 +16,28 @@ export const projects = [
 	{
 		title: 'Xeon Wallet',
 		image: '/assets/images/xeon.png',
-		linkGithub: 'https://github.com/Prayag-09/XeonWallet',
-		linkOnline: null,
+		githubLink: 'https://github.com/Prayag-09/XeonWallet',
+		liveDemo: null,
 		description:
-			'Developed XeonWallet, a secure digital wallet application, focusing on simplicity, security, and scalability.',
-		techStack: ['Next', 'TypeScript', 'Docker', 'Prisma', 'Tailwindcss'],
+			'A secure and intuitive digital wallet designed for seamless transactions, prioritizing security, simplicity, and scalability.',
+		techStack: ['Next.js', 'TypeScript', 'Docker', 'Prisma', 'TailwindCSS'],
 	},
 	{
 		title: 'JobifyX',
 		image: '/assets/images/job.png',
-		linkGithub: 'https://github.com/Prayag-09/JobifyX-Ultimate-Job-Portal',
-		linkOnline: null,
+		githubLink: 'https://github.com/Prayag-09/JobifyX-Ultimate-Job-Portal',
+		liveDemo: null,
 		description:
-			'A dynamic job portal connecting job seekers and recruiters with advanced job search, real-time updates, authentication, and a user-friendly interface.',
+			'An advanced job portal connecting job seekers and recruiters with real-time updates, powerful search capabilities, and seamless authentication.',
 		techStack: ['React', 'Supabase', 'TailwindCSS'],
 	},
 	{
 		title: 'ForgeStory',
 		image: '/assets/images/forge.png',
-		linkGithub: 'https://github.com/Prayag-09/ForgeStory',
-		linkOnline: 'https://forgestory.vercel.app/blogs',
+		githubLink: 'https://github.com/Prayag-09/ForgeStory',
+		liveDemo: 'https://forgestory.vercel.app/blogs',
 		description:
-			'Developed a scalable blogging platform inspired by Medium, utilizing edge computing with Cloudflare Workers',
+			'A modern, scalable blogging platform inspired by Medium, leveraging edge computing with Cloudflare Workers for lightning-fast performance.',
 		techStack: ['React', 'Cloudflare', 'HonoJS', 'TailwindCSS'],
 	},
 ];
@@ -46,15 +46,13 @@ export const skills = [
 	'JavaScript',
 	'Node.js',
 	'React',
-	'Next.js',
 	'Express',
 	'Java',
 	'Tailwind CSS',
 	'PostgreSQL',
+	'Next.js',
 	'MySQL',
-	'Redis',
 	'Docker',
-	'Kubernetes',
 	'AWS',
 	'TypeScript',
 	'MongoDB',

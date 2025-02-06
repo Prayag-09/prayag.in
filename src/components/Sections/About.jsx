@@ -11,76 +11,87 @@ import transition from '/assets/images/transition.png';
 
 const About = () => {
 	const control = useAnimation();
-	const [ref, inView] = useInView();
+	const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.2 });
 
 	const containerVariants = {
 		hidden: { opacity: 0, y: 30 },
 		visible: {
 			opacity: 1,
 			y: 0,
-			transition: { duration: 0.8 },
+			transition: { duration: 0.8, ease: 'easeOut' },
 		},
 	};
 
 	useEffect(() => {
-		if (inView) {
-			control.start('visible');
-		} else {
-			control.start('hidden');
-		}
+		if (inView) control.start('visible');
+		else control.start('hidden');
 	}, [control, inView]);
 
 	return (
-		<section className='mt-5 max-w-4xl mx-auto md:px-8' id='about'>
-			<SectionHeader title={'About.'} subtitle={'Skills & Journey'} />
+		<section className='mt-10 py-16 max-w-5xl mx-auto md:px-10' id='about'>
+			<SectionHeader
+				title='About Me.'
+				subtitle='Skills, Experience & Passion'
+			/>
 
-			<div
-				className='text-secondary-text md:flex flex-row gap-16 px-4 md:px-0'
-				ref={ref}>
+			<div ref={ref} className='flex flex-col md:flex-row gap-12 px-6 md:px-0'>
+				{/* Left: About Content */}
 				<motion.div
 					variants={containerVariants}
 					initial='hidden'
 					animate={control}
-					className='flex-1 text-base'>
-					<p className='pb-3'>
-						Hey there! I&apos;m Prayag, a software developer based in India. I
-						specialize in backend development, particularly using Express.JS,
-						Node.JS, and , but I&apos;m also comfortable with various tools and adapt
-						to project needs. I also have experience in frontend development.
+					className='flex-1 text-base leading-relaxed text-secondary space-y-6'>
+					<p className='text-lg'>
+						Hey there! I&apos;m{' '}
+						<span className='font-semibold text-white'>Prayag</span>, a
+						passionate software developer from India. My expertise lies in
+						backend development, particularly with{' '}
+						<span className='text-white font-semibold'>
+							Node.js, Express.js, and TypeScript
+						</span>
+						. However, I&apos;m also well-versed in frontend technologies,
+						making me a well-rounded full-stack developer.
 					</p>
 
-					<div className='pb-3'>
-						Currently, I work as SDE Intern for{' '}
+					<div>
+						Currently, I&apos;m working as an{' '}
+						<span className='font-medium text-white'>SDE Intern</span> at{' '}
 						<Tooltip
-							name={'Zerone Consulting'}
-							path={'https://www.zerone-consulting.com/'}
+							name='Zerone Consulting'
+							path='https://www.zerone-consulting.com/'
 							image={transition}
 						/>{' '}
+						where I contribute to building robust and scalable solutions.
 					</div>
 
-					<div className='pb-3'>
-						Outside of the world of code, I&apos;m the guy who enjoys playing
-						Basketball, Football and Chess.
+					<div>
+						Beyond coding, I have a strong passion for sports—I enjoy playing{' '}
+						<span className='text-white'>Basketball, Football, and Chess</span>.
+						These help me stay sharp and think strategically, just like in
+						development!
 					</div>
 
-					<div className='pb-3'>
-							I&apos;m looking for new opportunities where I can merge my love for
-							code with my love for learning to solve challenging problems. If
-							you have an opening that might be a good fit, let&apos;s connect and
-							explore the possibilities!
+					<div className='text-lg font-medium text-white flex items-center gap-2'>
+						<p>Open to New Opportunities!</p>
 					</div>
+					<p>
+						I&apos;m actively seeking exciting opportunities where I can
+						leverage my skills to build impactful solutions. If you&apos;re
+						looking for a dedicated developer who loves solving challenging
+						problems,
+						<p className='text-white'>Let&apos;s Connect!</p>
+					</p>
 				</motion.div>
 
-				<div className='flex-1 pt-4 md:pt-0 text-sm'>
+				<div className='flex-1 space-y-6 border-2 border-rounded-xl border-gray-800 p-6 rounded-lg shadow-lg'>
 					<StackSkills
-						title={'Programming & Tools'}
+						title='Programming & Tools'
 						list={skills}
 						icon={<FaCode color='#6366f1' />}
 					/>
 
 					<StackSkills
-						className='text-sm'
-						title={'Certificates'}
+						title='Certifications'
 						list={certificates}
 						icon={<TbCertificate color='#6366f1' />}
 					/>
