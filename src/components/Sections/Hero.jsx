@@ -114,7 +114,7 @@ const Hero = () => {
 					}}></div>
 			</section>
 		</div>
-	);
+	);---
 };
 
 export default Hero;
