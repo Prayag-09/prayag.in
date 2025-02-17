@@ -56,11 +56,13 @@ const About = () => {
 					<div>
 						Currently, I&apos;m working as an{' '}
 						<span className='font-medium text-white'>SDE Intern</span> at{' '}
-						<Tooltip
-							name='Zerone Consulting'
-							path='https://www.zerone-consulting.com/'
-							image={transition}
-						/>{' '}
+						<span className='text-white font-extrabold'>
+							<Tooltip
+								name={<span className='text-gray-500'>Zerone Consulting</span>}
+								path='https://www.zerone-consulting.com/'
+								image={transition}
+							/>
+						</span>{' '}
 						where I contribute to building robust and scalable solutions.
 					</div>
 
@@ -83,6 +85,7 @@ const About = () => {
 					</p>
 				</motion.div>
 
+				{/* Right: Skills & Certifications */}
 				<div className='flex-1 space-y-6 border-2 border-rounded-xl border-gray-800 p-6 rounded-lg shadow-lg'>
 					<StackSkills
 						title='Programming & Tools'

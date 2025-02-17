@@ -48,7 +48,7 @@ const FloatingNavBar = ({ className = '', visible }) => {
 				transition={{
 					duration: 0.2,
 				}}
-				className={`flex max-w-fit fixed top-5 inset-x-0 mx-auto border border-transparent rounded-full bg-white shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] z-[5000] pr-2 pl-8 py-2 items-center justify-center space-x-4 ${className}`}>
+				className={`flex max-w-fit fixed top-5 inset-x-0 mx-auto border border-transparent rounded-full bg-white shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] z-[5000] pr-2 pl-8 py-2 items-center justify-center space-x-4 neon-effect ${className}`}>
 				{fixedNav.map((navItem, idx) => (
 					<Link
 						to={navItem.name.toLowerCase()}
@@ -60,13 +60,20 @@ const FloatingNavBar = ({ className = '', visible }) => {
 						onClick={() => scrollToTop(navItem)}
 						key={idx}
 						aria-label={`Navigate to ${navItem.name}`}
-						className={`relative items-center font-bold flex space-x-1 text-neutral-600 transition-li hover:transform-li cursor-pointer`}>
+						className={`relative items-center font-bold flex space-x-1 text-neutral-600 transition-li hover:transform-li cursor-pointer group`}>
 						<span className='block sm:hidden'>{navItem.icon}</span>
 						<span className='hidden sm:block text-sm md:text-base'>
 							{navItem.name}
 						</span>
+
+						{/* Neon glow effect on hover */}
+						<motion.div
+							className='absolute inset-0 bg-transparent rounded-full border-2 border-transparent group-hover:border-secondary transition-all duration-300 ease-in-out'
+							whileHover={{ scale: 1.2 }}
+						/>
 					</Link>
 				))}
+
 				<Link
 					to='contact'
 					smooth={true}

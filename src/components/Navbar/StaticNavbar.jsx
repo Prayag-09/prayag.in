@@ -8,10 +8,12 @@ const StaticNavbar = () => {
 	const controls = useAnimation();
 
 	useEffect(() => {
+		// Smooth transition for navbar visibility
 		controls.start({ y: 0, opacity: 1, transition: { duration: 0.5 } });
 
+		// Handle click outside to close mobile menu
 		const handleClickOutside = (e) => {
-			if (!e.target.closest('.menu-btn')) {
+			if (!e.target.closest('.menu-btn') && !e.target.closest('.menu-items')) {
 				setState(false);
 			}
 		};
@@ -20,10 +22,11 @@ const StaticNavbar = () => {
 		return () => document.removeEventListener('click', handleClickOutside);
 	}, [controls]);
 
+	// NameLogo component for the navbar
 	const NameLogo = () => (
 		<div className='flex items-center justify-between py-5 md:block'>
 			<Link to='home' smooth={true} duration={500} className='flex gap-1 group'>
-				<span className='font-bold text-[1.1rem] text-white group-hover:text-secondary group-hover:scale-110 transition-colors duration-500'>
+				<span className='font-bold text-[1.1rem] text-white group-hover:text-secondary group-hover:scale-110 group-hover:underline group-hover:tracking-wider transition-all duration-300 ease-in-out transform hover:text-blue-400 hover:scale-105'>
 					prayag
 				</span>
 			</Link>
@@ -36,7 +39,7 @@ const StaticNavbar = () => {
 					{state ? (
 						<svg
 							xmlns='http://www.w3.org/2000/svg'
-							className='h-6 w-6'
+							className='h-6 w-6 transform rotate-180'
 							viewBox='0 0 20 20'
 							fill='currentColor'>
 							<path
@@ -79,12 +82,12 @@ const StaticNavbar = () => {
 					<div
 						className={`flex-1 items-center mt-8 md:mt-0 md:flex ${
 							state ? 'block' : 'hidden'
-						}`}>
-						<ul className='flex-1 justify-end items-center space-y-6 md:flex md:space-x-6 md:space-y-0'>
+						} menu-items`}>
+						<ul className='flex-1 text-xl justify-end items-center space-y-6 md:flex md:space-x-6 md:space-y-0'>
 							{fixedNav.map((navItem, idx) => (
-								<li
+								<motion.li
 									key={idx}
-									className='text-white transition-li hover:transform-li text-base font-semibold group-hover:scale-110 group-hover:text-secondary transition-transform duration-500'>
+									className='text-white font-semibold group transition-all duration-300 ease-in-out transform hover:scale-105 hover:text-secondary'>
 									<Link
 										to={navItem.name.toLowerCase()}
 										smooth={true}
@@ -95,7 +98,7 @@ const StaticNavbar = () => {
 										className='block cursor-pointer'>
 										{navItem.name}
 									</Link>
-								</li>
+								</motion.li>
 							))}
 						</ul>
 					</div>

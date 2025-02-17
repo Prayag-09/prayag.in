@@ -15,7 +15,6 @@ const Hero = () => {
 	const hero = useRef(null);
 	const [offsetY, setOffsetY] = useState(0);
 
-	// Parallax Effect on Scroll
 	const handleScroll = () => {
 		setOffsetY(window.scrollY * 0.2);
 	};

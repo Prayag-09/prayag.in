@@ -1,11 +1,9 @@
-@import url('https://cdnjs.cloudflare.com/ajax/libs/cascadia-code/2009.22/cascadia-code.min.css');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
-	font-family: 'Cascadia Code', monospace;
+	font-family: 'Source Code Pro', monospace;
 	background-color: #0f172a;
 }
 
