@@ -51,7 +51,7 @@ const ProjectCard = ({ project = {} }) => {
 					{/* Project Title */}
 					<CardItem
 						translateZ={50}
-						className='text-lg font-semibold text-primary-text mt-3'>
+						className='text-xl font-semibold text-primary-text mt-3'>
 						{title}
 					</CardItem>
 
@@ -59,14 +59,14 @@ const ProjectCard = ({ project = {} }) => {
 					<CardItem
 						as='p'
 						translateZ={60}
-						className='text-secondary-text text-sm mt-2 line-clamp-3'>
+						className='text-secondary-text text-base mt-2 line-clamp-3'>
 						{description}
 					</CardItem>
 
 					{/* Tech Stack */}
 					{techStack.length > 0 && (
 						<CardItem translateZ={90} className='mt-3'>
-							<div className='flex flex-wrap gap-2 text-xs'>
+							<div className='flex flex-wrap gap-2 text-sm'>
 								{techStack.map((tech, index) => (
 									<span
 										key={index}
@@ -83,7 +83,7 @@ const ProjectCard = ({ project = {} }) => {
 						{liveDemo && liveDemo.trim() !== '' && (
 							<button
 								onClick={() => openLink(liveDemo)}
-								className='flex-1 text-center px-3 py-1 text-xs font-medium text-black bg-white rounded-md hover:bg-gray-200 transition'>
+								className='flex-1 text-center px-3 py-1 text-sm font-medium text-black bg-white rounded-md hover:bg-gray-200 transition'>
 								Live Demo →
 							</button>
 						)}
