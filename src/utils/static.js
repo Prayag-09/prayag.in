@@ -42,7 +42,7 @@ export const projects = [
 		title: 'ForgeStory',
 		image: '/assets/images/forge.png',
 		githubLink: 'https://github.com/Prayag-09/ForgeStory',
-		liveDemo: 'https://forgestory.vercel.app/blogs',
+		liveDemo: 'https://forgestory.vercel.app/',
 		description:
 			'A modern, scalable blogging platform inspired by Medium, leveraging Cloudflare Workers for lightning-fast performance.',
 		techStack: ['React', 'Cloudflare', 'HonoJS', 'TailwindCSS'],
