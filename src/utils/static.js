@@ -14,22 +14,29 @@ export const fixedNav = [
 
 export const projects = [
 	{
+		title: 'LumaAI',
+		image: '/assets/images/luma.png',
+		githubLink: 'https://github.com/Prayag-09/LumaAI',
+		liveDemo: 'https://youtu.be/fPZUVRJWIIk',
+		description:
+			'An AI-powered chat application leveraging the Gemini API for real-time conversations, built with Next.js and React for a seamless user experience.',
+		techStack: [
+			'Next.js',
+			'TypeScript',
+			'Prisma',
+			'Gemini API',
+			'ImageKit',
+			'Express',
+		],
+	},
+	{
 		title: 'Xeon Wallet',
 		image: '/assets/images/xeon.png',
 		githubLink: 'https://github.com/Prayag-09/XeonWallet',
-		liveDemo: null,
+		liveDemo: 'https://www.youtube.com/watch?v=yN57RFe5GoQ',
 		description:
 			'A secure and intuitive digital wallet designed for seamless transactions, prioritizing security, simplicity, and scalability.',
 		techStack: ['Next.js', 'TypeScript', 'Docker', 'Prisma', 'TailwindCSS'],
-	},
-	{
-		title: 'JobifyX',
-		image: '/assets/images/job.png',
-		githubLink: 'https://github.com/Prayag-09/JobifyX-Ultimate-Job-Portal',
-		liveDemo: null,
-		description:
-			'An advanced job portal connecting job seekers and recruiters with real-time updates, powerful search capabilities, and seamless authentication.',
-		techStack: ['React', 'Supabase', 'TailwindCSS'],
 	},
 	{
 		title: 'ForgeStory',
@@ -37,8 +44,17 @@ export const projects = [
 		githubLink: 'https://github.com/Prayag-09/ForgeStory',
 		liveDemo: 'https://forgestory.vercel.app/blogs',
 		description:
-			'A modern, scalable blogging platform inspired by Medium, leveraging edge computing with Cloudflare Workers for lightning-fast performance.',
+			'A modern, scalable blogging platform inspired by Medium, leveraging Cloudflare Workers for lightning-fast performance.',
 		techStack: ['React', 'Cloudflare', 'HonoJS', 'TailwindCSS'],
+	},
+	{
+		title: 'JobifyX [under development]',
+		image: '/assets/images/job.png',
+		githubLink: 'https://github.com/Prayag-09/JobifyX-Ultimate-Job-Portal',
+		liveDemo: null,
+		description:
+			'An advanced job portal connecting job seekers and recruiters with real-time updates, powerful search capabilities, and seamless authentication.',
+		techStack: ['React', 'Supabase', 'TailwindCSS'],
 	},
 ];
 
